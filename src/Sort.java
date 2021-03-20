@@ -1,9 +1,6 @@
-# Merge-Sort
-## 归并排序
-+ 归并
-  >Sort.java
-  ```java
-  protected static int[] merge(int[] a) {
+class Sort {
+
+    protected static int[] merge(int[] a) {
         int l = a.length;
         //拆分到最小组
         if (a.length < 2)
@@ -18,11 +15,8 @@
         //排序
         return sort(merge(left), merge(right));
     }
-  ```
-+ 排序
-  >Sort.java
-  ```java
-  private static int[] sort(int[] left, int[] right) {
+
+    private static int[] sort(int[] left, int[] right) {
         //索引
         int index = 0, r = 0, l = 0;
         //返回数组
@@ -42,4 +36,4 @@
         }
         return result;
     }
-  ```
+}
