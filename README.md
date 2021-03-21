@@ -1,5 +1,7 @@
 # Merge-Sort
 ## 归并排序
++ 动图演示
+  ![MergeSort](./gif.gif)
 + 归并
   >Sort.java
   ```java
